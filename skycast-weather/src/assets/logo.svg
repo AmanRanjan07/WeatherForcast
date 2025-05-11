@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main circle -->
+  <circle cx="60" cy="60" r="50" fill="#1e3c72"/>
+  
+  <!-- Sun rays -->
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="25" fill="#FFD700"/>
+    <g id="rays">
+      <line x1="30" y1="0" x2="45" y2="0" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="21.21" y1="21.21" x2="31.82" y2="31.82" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="0" y1="30" x2="0" y2="45" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="-21.21" y1="21.21" x2="-31.82" y2="31.82" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="-30" y1="0" x2="-45" y2="0" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="-21.21" y1="-21.21" x2="-31.82" y2="-31.82" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="0" y1="-30" x2="0" y2="-45" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+      <line x1="21.21" y1="-21.21" x2="31.82" y2="-31.82" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Cloud -->
+  <path d="M75,75 Q85,65 95,75 Q105,85 95,95 H55 Q45,95 45,85 Q45,75 55,75 Z" fill="white"/>
+</svg> 
