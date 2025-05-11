@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../styles/Navbar.css';
 import umbrellaBg from '../assets/umbrellabg.jpg';
-import { FiMenu, FiX, FiUser } from 'react-icons/fi';
+import { FiMenu, FiX, FiUser, FiHome } from 'react-icons/fi';  // Import FiHome here
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,6 +71,7 @@ const Navbar = () => {
 
         <div className={`navbar-center ${mobileMenuOpen ? 'open' : ''}`}>
           <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
+            <FiHome size={20} style={{ marginRight: '8px' }} /> {/* FiHome icon here */}
             Home
           </Link>
           {isAuthenticated && (
